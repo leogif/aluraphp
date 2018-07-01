@@ -6,5 +6,4 @@
             <p class="alert-success">Produto <?= $nome; ?> <?= $preco; ?> adicionado com sucesso!</p>
         </header>
     </section>
-</body> 
-</html>
+<?php include('rodape.php'); ?>

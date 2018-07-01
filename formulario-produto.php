@@ -6,5 +6,4 @@
    <input type="text" name="preco"><br/><br/>
    <input type="submit" value="Cadastrar">
    </form> 
-</body>
-</html>
+<?php include('rodape.php'); ?>
