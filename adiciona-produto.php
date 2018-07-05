@@ -1,7 +1,7 @@
 <?php include('cabecalho.php'); ?>
             <?php
-                $nome = $_GET['nome'];
-                $preco = $_GET['preco'];
+                $nome = $_REQUEST['nome'];
+                $preco = $_REQUEST['preco'];
             ?>
             <p class="alert-success">Produto <?= $nome; ?> <?= $preco; ?> adicionado com sucesso!</p>
         </header>
