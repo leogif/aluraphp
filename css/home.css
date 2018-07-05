@@ -1,21 +1,18 @@
 body {
     padding-top: 50px;
-    background-color: #5799ff;
+    background-color: orange;
+    color: #000;
 }
 
 .principal {
     padding: 40px 15px;
     text-align: center;
-    color: #fff;
 }
 
 .principal h1 {
     font-size: 5em;
-    color: #fff;
 }
 
 .principal p {
     font-size: 2.2em;
 }
-
-video {}
