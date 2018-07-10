@@ -4,7 +4,7 @@
         <input type="text" name="nome"><br/><br/>
     
     <label>Preço:</label>
-        <input type="text" name="preco"><br/><br/>
-        <input type="submit" value="Cadastrar">
+        <input type="number" step="0.01" name="preco"><br/><br/>
+        <input class="btn btn-primary btn-lg" type="submit" value="Cadastrar">
    </form> 
 <?php include('rodape.php'); ?>
