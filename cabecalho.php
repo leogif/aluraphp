@@ -10,5 +10,20 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <section class="container">
-        <header class="principal">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="navbar-brand" href="index.php"></a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="formulario-produto.php">Adiciona Produto</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <section class="principal">
+        
