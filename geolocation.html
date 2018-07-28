@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+</head>
+
+<body>
+    <h2>Mostre minha localização.</h2>
+    <br/>
+    <input type="button" value="Mostre minha localização" onclick="display();">
+    <br/>
+    <div id="result">
+        <!-- Neste #result o javascript irá mostrar os dados-->
+    </div>
+
+    <!-- Javascript -->
+    <script>
+        function display() {
+            navigator.geolocation.getCurrentPosition(
+                function (position) {
+                    var result = 'Latitude: ' + position.coords.latitude + '<br/>Longitude: ' + position.coords.longitude;
+                    document.getElementById('result').innerHTML = result
+                },
+
+                function (error) {
+                    switch (error.code) {
+                        case error.PERMITION_DENIED:
+                            document.getElementById('result').innerHTML =
+                                "Usuário negou a solicitação de geolocalização."
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            document.getElementById('result').innerHTML =
+                                "As informações de localização estão indisponíveis."
+                            break;
+                        case error.TIMEOUT:
+                            document.getElementById('result').innerHTML =
+                                "A solicitação para obter a localização do usuário atingiu o tempo limite"
+                            break;
+                        case error.UNKNOWN_ERROR:
+                            document.getElementById('result').innerHTML = "Ocorreu um erro desconhecido"
+                            break;
+                    }
+                }
+            )
+        };
+    </script>
+</body>
+
+</html>

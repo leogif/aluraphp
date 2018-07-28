@@ -6,7 +6,7 @@
 <?php // mysqli_error  
     function insereProduto($conn, $nome, $preco){
         $query = "insert into produtos (nome, preco) values ('{$nome}','{$preco}')";
-        return mysqli_query($conn, $query)    
+        return mysqli_query($conn, $query);    
     }  
     
     $nome = $_REQUEST["nome"];
